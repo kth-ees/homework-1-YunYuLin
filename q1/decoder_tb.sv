@@ -19,7 +19,7 @@ module decoder_tb;
       binary = i[3:0];
       #10;
     end
-    $finish;
+    $stop;
   end
 
 endmodule
