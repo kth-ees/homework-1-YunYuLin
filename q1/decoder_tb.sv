@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module decoder_tb;
 
   // Testbench signals
@@ -11,4 +13,13 @@ module decoder_tb;
   );
 
   // Complete your testbench here
+
+  initial begin
+    for ( int i = 0 ; i < 16 ; i++) begin
+      binary = i[3:0];
+      #10;
+    end
+    $finish;
+  end
+
 endmodule
